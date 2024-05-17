@@ -1,0 +1,27 @@
+# Job05
+## Création de la collection "category" et insertion de catégories
+
+### Ouvrir mongo shell
+
+Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simplement `mongo`. Assurez-vous que vous êtes connecté à la bonne base de données en utilisant la commande `use shop`.
+
+### Créer la Collection "category"
+
+Utilisez la commande suivante pour créer la collection "category":
+
+javascript db.createCollection("category")
+
+
+### Insérer les Catégories
+
+Ensuite, insérez les catégories dans la collection "category" avec la commande suivante:
+
+javascript db.category.insertMany([{name: "Electronique"}, {name: "Vêtements"}, {name: "Alimentation"}])
+
+
+### Vérifier les Catégories Insérées
+
+Utilisez la commande `find()` pour vérifier que les catégories ont été correctement insérées:
+
+javascript db.category.find()
+
