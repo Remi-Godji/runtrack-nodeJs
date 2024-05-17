@@ -1,0 +1,22 @@
+# Job03
+## Utilisation de mongo shell pour créer une base de données "shop" et ajouter une collection "product"
+
+### Lancement de mongo shell
+
+Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simplement `mongo`. Cela suppose que MongoDB est correctement installé sur votre système et que le chemin vers l'exécutable mongo shell est configuré dans votre variable d'environnement PATH.
+
+### Création de la base de données "shop"
+
+Dans mongo shell, tapez la commande suivante pour basculer vers la base de données "shop". Si la base de données n'existe pas, elle sera créée automatiquement lorsque vous insérez le premier document dans une collection.
+
+javascript use shop
+
+
+### Ajout d'une collection "product"
+
+Maintenant, créez une collection "product" et ajoutez un document avec les champs spécifiés ("name", "description", "price", "quantity") en utilisant la commande `db.collection.insertOne()`.
+
+javascript db.product.insertOne({ name: "chaussure", description: "une paire de chaussures", price: 35, quantity: 120 })
+
+
+Cette commande insère un document dans la collection "product" avec les valeurs fournies pour chaque champ
