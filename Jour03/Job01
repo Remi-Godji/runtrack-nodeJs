@@ -1,0 +1,12 @@
+# Job01
+## Installation de MongoDB et accès via MongoDB Compass
+
+### Installation de MongoDB
+
+Suivez les instructions de la documentation officielle de MongoDB pour installer MongoDB sur votre système d'exploitation spécifique (Windows, macOS, Linux).
+
+### Accès à MongoDB via MongoDB Compass
+
+1. Téléchargez et installez MongoDB Compass depuis la page officielle.
+2. Lancez MongoDB Compass et connectez-vous à votre instance MongoDB locale en utilisant l'URI de connexion `mongodb://localhost:27017`.
+3. Explorez vos bases de données et collections via l'interface utilisateur de Compass.
