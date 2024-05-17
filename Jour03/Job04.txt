@@ -1,0 +1,19 @@
+# Job04
+## Ajout de nouveaux documents à la collection "product"
+
+### Ouvrir mongo shell
+
+Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simplement `mongo`. Assurez-vous que vous êtes connecté à la bonne base de données en utilisant la commande `use shop`.
+
+### Insérer les Documents
+
+Utilisez la commande `db.collection.insertMany()` pour insérer les nouveaux documents dans la collection "product".
+
+javascript db.product.insertMany([ { name: "Pantalon noir", description: "Un pantalon noir", price: 14.99, quantity: 12 }, { name: "chaussettes", description: "chaussettes cool!", price: 6, quantity: 6 } ])
+
+
+### Vérifier les Documents Insérés
+
+Utilisez la commande `db.product.find()` pour vérifier que les documents ont été correctement insérés.
+
+db.product.find()
