@@ -1,1 +1,15 @@
-vide
+# Job02
+## Afficher l'ensemble des bases de données dans MongoDB Compass
+
+Pour afficher l'ensemble des bases de données présentes dans MongoDB Compass, suivez ces étapes:
+
+1. **Lancez MongoDB Compass**: Ouvrez MongoDB Compass sur votre ordinateur. Si vous n'avez pas encore installé MongoDB Compass, téléchargez-le depuis le site officiel de MongoDB et installez-le.
+
+2. **Connectez-vous à votre instance MongoDB**: Entrez les informations nécessaires pour vous connecter à votre instance MongoDB. Cela inclut généralement l'hôte (adresse IP ou nom de domaine), le port, et si nécessaire, les identifiants de connexion (nom d'utilisateur et mot de passe).
+
+3. **Accédez à la console intégrée**: Une fois connecté à votre instance MongoDB, recherchez l'option pour accéder à la console intégrée. Cette fonctionnalité peut se trouver sous un menu déroulant ou un bouton spécifique indiquant "Console", "Shell", ou quelque chose de similaire.
+
+4. **Utilisez la commande `show dbs`**: Dans la console intégrée, tapez la commande `show dbs` et appuyez sur Entrée. Cette commande liste toutes les bases de données présentes dans votre instance MongoDB.
+
+5. **Vérifiez les résultats**: Après avoir exécuté la commande, vous devriez voir une liste de toutes les bases de données disponibles. Chaque ligne représente une base de données différente, souvent accompagnée de sa taille et du nombre d'objets qu'elle contient.
+
