@@ -1,0 +1,11 @@
+# Job06
+## Affichage de l'ensemble des collections de la base de données
+
+### Ouvrir mongo shell
+
+Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simplement `mongo`. Assurez-vous que vous êtes connecté à la bonne base de données en utilisant la commande `use <nom_de_la_base_de_données>`.
+
+### Afficher les Collections
+
+Utilisez la commande suivante pour afficher toutes les collections de la base de données actuelle:
+
