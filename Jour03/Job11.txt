@@ -1,0 +1,8 @@
+# Job11
+## Récupération des produits ayant un prix supérieur à 5 euros et un stock inférieur à 100
+
+
+### Écrire la Requête
+
+Utilisez la commande suivante pour récupérer les produits de la collection "product" ayant un prix supérieur à 5 euros et un stock inférieur à 100:
+
