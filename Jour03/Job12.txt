@@ -1,0 +1,29 @@
+# Job12
+## Récupération des produits ayant un prix supérieur à 14.99 euros ou un stock supérieur à 100
+
+### Ouvrir mongo shell
+
+Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simplement `mongo`. Assurez-vous que vous êtes connecté à la bonne base de données en utilisant la commande `use <nom_de_la_base_de_données>`.
+
+### Préparation des Données d'Exemple
+
+Avant d'exécuter la requête, assurez-vous que la collection "product" contient des données pertinentes. Voici quelques exemples de documents que vous pourriez insérer :
+
+javascript db.product.insertMany([ { "name" : "chaussure", "description" : "une paire de chaussures", "price" : 35, "quantity" : 120 }, { "name" : "chemise", "description" : "une chemise élégante", "price" : 15.99, "quantity" : 50 }, { "name" : "montre", "description" : "une montre digitale", "price" : 14.49, "quantity" : 150 }, { "name" : "sac à dos", "description" : "un sac à dos pratique", "price" : 20, "quantity" : 80 } ]);
+
+
+### Écrire la Requête
+
+Utilisez la commande suivante pour récupérer les produits de la collection "product" ayant un prix supérieur à 14.99 euros ou un stock supérieur à 100 :
+
+shell db.product.find({ or: [ { "price": { gt: 14.99 } }, { "quantity": { $gt: 100 } } ] })
+
+
+### Résultat Attendu
+
+Avec les données d'exemple fournies, la requête retournera les documents suivants :
+
+json { "_id" : ObjectId("..."), "name" : "chaussure", "description" : "une paire de chaussures", "price" : 35, "quantity" : 120 } { "_id" : ObjectId("..."), "name" : "chemise", "description" : "une chemise élégante", "price" : 15.99, "quantity" : 50 } { "_id" : ObjectId("..."), "name" : "montre", "description" : "une montre digitale", "price" : 14.49, "quantity" : 150 }
+
+
+Ces documents correspondent aux critères de la requête car ils ont soit un prix supérieur à 14.99 euros, soit un stock supérieur à 100
