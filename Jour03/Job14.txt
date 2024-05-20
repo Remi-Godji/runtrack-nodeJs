@@ -1,0 +1,20 @@
+####Job14
+Récupération d'une catégorie à l’aide de son ID
+Ouvrir mongo shell
+Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simplement mongo. Assurez-vous que vous êtes connecté à la bonne base de données en utilisant la commande use <nom_de_la_base_de_données>.
+
+Écrire la Requête
+Utilisez la commande suivante pour récupérer la catégorie spécifique de la collection "category" en utilisant son ID. Remplacez <categorie_id> par l'ID réel de la catégorie :
+
+db.category.findOne({_id: ObjectId('<categorie_id>')})
+Par exemple, si l'ID de la catégorie est '6647704c23c7c589139c116a', la commande serait :
+
+db.category.findOne({_id: ObjectId('6647704c23c7c589139c116a')})
+Résultat Attendu
+En exécutant la requête ci-dessus avec l'ID spécifié, le résultat attendu est l'affichage de la catégorie correspondante. Voici un exemple de ce que vous pourriez voir :
+
+{
+  "_id": ObjectId("6647704c23c7c589139c116a"),
+  "name": "Alimentation"
+}
+Cela signifie que la catégorie avec l'ID '6647704c23c7c589139c116a' a été trouvée et affichée, contenant uniquement le champ _id et le champ name.
