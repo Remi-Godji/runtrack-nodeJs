@@ -1,0 +1,11 @@
+# Job08
+## Affichage de seulement deux catégories de la collection "category"
+
+### Ouvrir mongo shell
+
+Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simplement `mongo`. Assurez-vous que vous êtes connecté à la bonne base de données en utilisant la commande `use <nom_de_la_base_de_données>`.
+
+### Écrire la Requête
+
+Utilisez la commande suivante pour afficher seulement deux catégories de la collection "category":
+
