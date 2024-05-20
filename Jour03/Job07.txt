@@ -1,0 +1,11 @@
+# Job07
+## Récupération de l'ensemble des données de la collection "category"
+
+### Ouvrir mongo shell
+
+Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simplement `mongo`. Assurez-vous que vous êtes connecté à la bonne base de données en utilisant la commande `use <nom_de_la_base_de_données>`.
+
+### Récupérer les Données
+
+Utilisez la commande suivante pour récupérer toutes les données de la collection "category":
+
