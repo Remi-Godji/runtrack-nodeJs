@@ -9,3 +9,4 @@ Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simp
 
 Utilisez la commande suivante pour récupérer l'ensemble des produits de la collection "product" triés par prix décroissant:
 
+db.product.find().sort({"price": -1})
