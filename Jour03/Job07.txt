@@ -9,3 +9,4 @@ Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simp
 
 Utilisez la commande suivante pour récupérer toutes les données de la collection "category":
 
+db.category.find()
