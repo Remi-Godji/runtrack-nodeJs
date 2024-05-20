@@ -6,3 +6,4 @@
 
 Utilisez la commande suivante pour récupérer les produits de la collection "product" ayant un prix supérieur à 5 euros et un stock inférieur à 100:
 
+db.product.find({ "price": { $gt: 5 }, "quantity": { $lt: 100 } })
