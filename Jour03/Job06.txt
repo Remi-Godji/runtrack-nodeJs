@@ -9,3 +9,4 @@ Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simp
 
 Utilisez la commande suivante pour afficher toutes les collections de la base de données actuelle:
 
+show collections
