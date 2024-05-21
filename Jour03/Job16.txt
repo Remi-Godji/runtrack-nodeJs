@@ -1,0 +1,40 @@
+#####Job16#####
+
+
+
+
+
+Joindre les Collections "product" et "category"
+Pour récupérer les produits avec leurs catégories associées, utilisez l'opération $lookup dans une requête aggregate:
+
+db.product.aggregate([
+   {
+      $lookup:
+        {
+          from: "category",
+          localField: "category_id",
+          foreignField: "_id",
+          as: "category_info"
+        }
+   }
+])
+Cette commande joint les documents de la collection "product" avec ceux de la collection "category" basés sur le champ category_id, et inclut les informations de catégorie dans le champ category_info du résultat.
+
+Résultat Attendu
+Le résultat de cette opération aggregate sera une liste de produits, où chaque produit inclut également les informations de sa catégorie associée dans le champ category_info. Par exemple:
+
+[
+   {
+      "_id": ObjectId("60d5ed07c8a9b6f4b0b1a2b2"),
+      "name": "Laptop",
+      "price": 1200,
+      "category_id": ObjectId("60d5ecb7c8a9b6f4b0b1a2b1"),
+      "category_info": [
+         {
+            "_id": ObjectId("60d5ecb7c8a9b6f4b0b1a2b1"),
+            "name": "Electronics"
+         }
+      ]
+   }
+]
+Ainsi, vous avez créé une relation entre les collections "product" et "category", mis à jour les produits avec des identifiants de catégorie, et récupéré les produits avec leurs catégories associées.
