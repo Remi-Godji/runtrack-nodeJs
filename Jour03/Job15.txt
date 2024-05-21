@@ -1,0 +1,24 @@
+# Job15
+## Changer le nom de la catégorie “bébé” en “Vêtements pour enfant”
+
+### Ouvrir mongo shell
+
+Ouvrez votre terminal ou invite de commande et lancez mongo shell en tapant simplement `mongo`. Assurez-vous que vous êtes connecté à la bonne base de données en utilisant la commande `use <nom_de_la_base_de_données>`.
+
+### Écrire la Requête
+
+Pour mettre à jour une seule occurrence de la catégorie "bébé", utilisez :
+
+shell db.category.updateOne( { "name": "bébé" }, { $set: { "name": "Vêtements pour enfant" } } )
+
+
+Pour mettre à jour toutes les occurrences de la catégorie "bébé", utilisez :
+
+shell db.category.updateMany( { "name": "bébé" }, { $set: { "name": "Vêtements pour enfant" } } )
+
+
+### Vérification
+
+Pour vérifier que la mise à jour a été effectuée correctement, recherchez la nouvelle catégorie :
+
+shell db.category.find({ "name": "Vêtements pour enfant" })
